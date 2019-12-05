@@ -5,6 +5,11 @@ Created on Mon Dec  2 12:11:19 2019
 @author: LOVESA
 """
 
+#%matplotlib inline
+#%nteractive debugger using the magic command %pdb
+#Terminal to convert ojupyter to HTML
+#jupyter nbconvert --to html notebook.ipynb
+
 #importing relevant packages
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
@@ -29,8 +34,10 @@ max_line_gap = 20    # maximum gap in pixels between connectable line segments
 
 
 #'/path/to/folder'
-inputpath='C:/Users/lovesa/Desktop/Roadline/test_images'
-outputpath = 'C:/Users/lovesa/Desktop/Roadline/test_images/test_images_output'
+#inputpath='C:/Users/lovesa/Desktop/Roadline/test_images'
+#outputpath = 'C:/Users/lovesa/Desktop/Roadline/test_images/test_images_output'
+inputpath = https://github.com/SamaraLove/Project-1-Lane-Following/tree/master/test_images
+outputpath = https://github.com/SamaraLove/Project-1-Lane-Following/tree/master/test_images_output
 
 #This will get all the files in the folder
 testfolder = [ f for f in os.listdir(inputpath) if isfile(join(inputpath,f)) ]
@@ -55,7 +62,7 @@ for n in range(0, len(testfolder)):
 
     initial_img = np.copy(images[n])*0 # creating a blank to draw lines on
     imshape = images.shape
-    vertices = np.array([[(140,imshape[0]),(440, 325), (520, 325), (920,imshape[0])]], dtype=np.int32)
+    vertices = np.array([[(140,imshape[0]),(440, 325), (520, 325), (960,imshape[0])]], dtype=np.int32)
 
     # create a masked edges image
     masked_image = Functions.region_of_interest(initial_img, vertices)
@@ -63,26 +70,27 @@ for n in range(0, len(testfolder)):
     
     #x, y = vertices.T
     #plt.plot(x, y, 'b--', lw=4)
+    #lines = cv2.HoughLinesP(masked_image, rho, theta, threshold, np.array([]), min_line_len, max_line_gap)
+    #plt.imshow(lines) 
 
-    hough_lines = (Functions.hough_lines(edges, rho, theta, threshold, min_line_len, max_line_gap))
-    draw_lines = (Functions.draw_lines(initial_img, lines, color=[255, 0, 0], thickness=10))
+    hough_img = Functions.hough_lines(edges, rho, theta, threshold, min_line_len, max_line_gap)
+    #print(hough_img.shape)
+    draw_lines = Functions.draw_lines(initial_img, lines, color=[255, 0, 0], thickness=10)
+    weighted_img = Functions.weighted_img(images[n], initial_img, α=0.8, β=1., γ=0.)
     #weighted_img = (Functions.weighted_img(images[n], initial_img, α=0.8, β=1., γ=0.))
-    weighted_img = (Functions.weighted_img(images[n], initial_img, α=0.8, β=1., γ=0.))
     
-    plt.imshow(hough_lines) #Prints full binary image with red lines only
-    plt.imshow(weighted_img) 
-    #If images[n] used instead in weight_img then 
-    #Prints original image with lines highlighted red 
+    plt.imshow(hough_img)       #Prints full binary image with red lines only
+    plt.imshow(weighted_img)    #Prints original image with lines highlighted red 
     
     #Save images to the test_images_output directory
     # Change the current directory to specified directory  
     os.chdir(outputpath) 
-    filename = 'output4.jpg'
+    #filename = 'output' + n +'.jpg'
+    filename = 'output' + str(n) +'.jpg'
     
     #cv2.imwrite(filename, gray)     #saving grayscale image
     cv2.imwrite(filename, weighted_img)     #saving grayscale overlay iamge on original
-    
-    n+1;
+
     #if cv2.waitKey(0) & 0xFF == ord('q'):
     #    break
     
