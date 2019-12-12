@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 [image3]: ./examples/blur.jpg "blur"
 [image4]: ./examples/canny.jpg "canny"
 [image5]: ./examples/dilate.jpg "dilate"
-[image6]: ./examples/region.jpg "region"
+[image6]: ./examples/region.png "region"
 [image7]: ./examples/mask.jpg "mask"
 [image8]: ./examples/houghlines.jpg "houghlines"
 [image9]: ./examples/houghdrawlines.jpg "houghdrawlines"
@@ -30,12 +30,12 @@ The goals / steps of this project are the following:
 [image13]: ./examples/output_solidYellowCurve2.jpg "output_solidYellowCurve2"
 [image14]: ./examples/output_solidYellowLeft.jpg "output_solidYellowLeft"
 [image15]: ./examples/output_whiteCarLaneSwitch.jpg "whiteCarLaneSwitch"
-
+---
 
 Original Image:
 For this markdown, I will only show the steps with one image, the 'solidwhiteCurve'. The final images for all can be found at the end of this report.
 ![alt_text][image1]
----
+
 
 ### Reflection
 
