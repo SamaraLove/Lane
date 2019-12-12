@@ -20,16 +20,16 @@ The goals / steps of this project are the following:
 [image4]: ./examples/canny.jpg "canny"
 [image5]: ./examples/dilate.jpg "dilate"
 [image6]: ./examples/region.jpg "region"
-[image7]]: ./examples/mask.jpg "mask"
-[image8]]: ./examples/houghlines.jpg "houghlines"
-[image9]]: ./examples/houghdrawlines.jpg "houghdrawlines"
+[image7]: ./examples/mask.jpg "mask"
+[image8]: ./examples/houghlines.jpg "houghlines"
+[image9]: ./examples/houghdrawlines.jpg "houghdrawlines"
 
-[image10]]: ./examples/output_solidWhiteCurve.jpg "output_solidWhiteCurve"
-[image11]]: ./examples/output_solidWhiteRight.jpg "output_solidWhiteRight"
-[image12]]: ./examples/output_solidYellowCurve.jpg "output_solidYellowCurve"
-[image13]]: ./examples/output_solidYellowCurve2.jpg "output_solidYellowCurve2"
-[image14]]: ./examples/output_solidYellowLeft.jpg "output_solidYellowLeft"
-[image15]]: ./examples/output_whiteCarLaneSwitch.jpg "whiteCarLaneSwitch"
+[image10]: ./examples/output_solidWhiteCurve.jpg "output_solidWhiteCurve"
+[image11]: ./examples/output_solidWhiteRight.jpg "output_solidWhiteRight"
+[image12]: ./examples/output_solidYellowCurve.jpg "output_solidYellowCurve"
+[image13]: ./examples/output_solidYellowCurve2.jpg "output_solidYellowCurve2"
+[image14]: ./examples/output_solidYellowLeft.jpg "output_solidYellowLeft"
+[image15]: ./examples/output_whiteCarLaneSwitch.jpg "whiteCarLaneSwitch"
 
 
 Original Image:
