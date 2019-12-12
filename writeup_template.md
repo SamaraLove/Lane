@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image6]: ./examples/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch"
 
 Original Images:
-![][image1] ![][image2]
+![][image1]{ width=50% }
 ![alt_text][image3]![alt text][image4]
 ![alt text][image4]![alt text][image5]![alt text][image6]
 ---
