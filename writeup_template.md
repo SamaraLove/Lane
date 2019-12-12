@@ -58,6 +58,7 @@ The dilate()function was added as it dilates the edge image. This makes the line
 ![alt text][image5]
 
 The region of interest was found using a polygon shape. The vertices of a four sided polygon was defined to mask using cv2.fillPoly(). With the origin being in the upper left corner (think of location of a matrix). This reduces the space that we will focus on for the next transforms.
+
 ![alt text][image6]
 
 The masked image was cropped to within the region of interest
