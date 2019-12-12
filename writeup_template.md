@@ -14,8 +14,6 @@ The goals / steps of this project are the following:
 
 
 [//]: # (Image References)
-
-Original images:
 [image1]: ./examples/solidWhiteCurve.jpg "solidWhiteCurve"
 [image2]: ./examples/solidWhiteRight.jpg "solidWhiteRight"
 [image3]: ./examples/solidYellowCurve.jpg "solidYellowCurve"
@@ -23,7 +21,10 @@ Original images:
 [image5]: ./examples/solidYellowCurve2.jpg "solidYellowCurve2"
 [image6]: ./examples/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch"
 
-![alt text][image1][image2][image3]
+Original Images:
+![alt text][image1]
+![alt_text][image2]
+![alt_text][image3]
 ![alt text][image4][image5][image6]
 ---
 
