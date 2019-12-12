@@ -22,8 +22,8 @@ The goals / steps of this project are the following:
 [image6]: ./examples/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch"
 
 Original Images:
-![]<img src="solidWhiteCurve" width="200">
-![alt_text][image2]{:height="36px" width="36px"}.
+![][image1] width="200">
+![alt_text][image2]{:height="36px" width="36px"}
 ![alt_text][image3]
 ![alt text][image4][image5][image6]
 ---
