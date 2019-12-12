@@ -23,7 +23,8 @@ The goals / steps of this project are the following:
 
 Original Images:
 ![][image1]{ width=50% }
-![alt_text][image3]![alt text][image4]
+![alt_text][image3]{#id .class width=30 height=20px}
+![][image3]{#id .class width=30 height=20px}
 ![alt text][image4]![alt text][image5]![alt text][image6]
 ---
 
