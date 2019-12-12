@@ -88,6 +88,8 @@ This project was not tested on images/ videos of different sizes – the vertice
 
 The video detection is jittery, and doesn't always produce a constant line feed.
 
+Could have more background functions to easily detect lines of any colour
+
 ### 3. Suggest possible improvements to your pipeline
 
 A possible improvement would be to filter out small segments of the lines (length < 40 pixels) as they could be noise.
